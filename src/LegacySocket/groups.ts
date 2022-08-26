@@ -104,7 +104,7 @@ const makeGroupsSocket = (config: LegacySocketConfig) => {
 	}
 
 	socketEvents.on('CB:Chat,cmd:action', () => {
-		/*const data = json[1].data
+		const data = json[1].data
 		if (data) {
 			const emitGroupParticipantsUpdate = (action: WAParticipantAction) => this.emitParticipantsUpdate
 			(json[1].id, data[2].participants.map(whatsappID), action)
